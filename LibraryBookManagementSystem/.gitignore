@@ -1,0 +1,8 @@
+# Ignore Eclipse metadata files
+.metadata/
+.classpath
+.project
+.settings/
+bin/
+target/
+*.log
