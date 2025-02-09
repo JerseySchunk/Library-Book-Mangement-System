@@ -45,5 +45,15 @@ public class Library {
 		return false;
 	}
 	
+	//Waiting for the book class to be updated with getter methods before I can continue this
+	//public Book SearchByISBN(String ISBN) {
+		
+	
+	public void displayBooks() {
+		for(int i = 0; i < count; i++) {
+			System.out.println(book[i]);
+		}
+	}
+	
 
 }
