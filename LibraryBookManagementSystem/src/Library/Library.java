@@ -25,6 +25,25 @@ public class Library {
 		return false;
 	}
 	
+	//Removes a specified book from the book array.
+	//Will check if the provided book is null and if the book is in the array.
+	//Will also check if the book being compared to is null to avoid NullPointerExceptions
+	//Returns true if successful and false otherwise. 
+	public boolean removeBook(Book book) {
+		if(book == null) {
+			return false;
+		}
+		
+		for(int i = 0; i < count; i++) {			
+			if(books[i] != null && books[i].equals(book)) {
+				books[i] = books[count - 1];
+				books[count - 1] = null;
+				count--;
+				return true;
+			}
+		}
+		return false;
+	}
 	
 
 }
