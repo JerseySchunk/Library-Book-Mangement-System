@@ -7,6 +7,13 @@ public class Book {
     private String ISBN;
     double price;
     
+ // This sets all values to be Unknown or 0.0 upon creation 
+    public Book() {
+        this.title = "Unknown";
+        this.author = "Unknown";
+        this.ISBN = "Unknown";
+        this.price = 0.0;}
+    
     
 	public String getTitle() {
 		return title;
