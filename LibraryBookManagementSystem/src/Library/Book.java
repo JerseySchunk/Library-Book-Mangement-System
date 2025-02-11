@@ -7,7 +7,7 @@ public class Book {
     private String ISBN;
     double price;
     
- // This sets all values to be Unknown or 0.0 upon creation 
+    // This sets all values to be Unknown or 0.0 upon creation 
     public Book() {
         this.title = "Unknown";
         this.author = "Unknown";
@@ -21,6 +21,13 @@ public class Book {
         this.ISBN = ISBN;
         this.price = price;}
     
+    // Copy constructor sets copy values 
+    public Book(Book other) {
+        this.title = other.title;
+        this.author = other.author;
+        this.ISBN = other.ISBN;
+        this.price = other.price;
+    }
     
 	public String getTitle() { //getters and setters
 		return title;
