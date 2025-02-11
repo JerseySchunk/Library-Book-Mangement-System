@@ -14,8 +14,15 @@ public class Book {
         this.ISBN = "Unknown";
         this.price = 0.0;}
     
+    // Parameterized constructor so that new books will be correctly formated and have all needed information
+    public Book(String title, String author, String ISBN, double price) {
+        this.title = title;
+        this.author = author;
+        this.ISBN = ISBN;
+        this.price = price;}
     
-	public String getTitle() {
+    
+	public String getTitle() { //getters and setters
 		return title;
 	}
 	public void setTitle(String title) {
