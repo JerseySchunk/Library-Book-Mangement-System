@@ -26,16 +26,23 @@ public class Book {
         this.title = other.title;
         this.author = other.author;
         this.ISBN = other.ISBN;
-        this.price = other.price;
-    }
+        this.price = other.price;}
     
     //makes the values into strings
     public String toString() {
-        return "Book[Title=" + title + ", Author=" + author + ", ISBN=" + ISBN + ", Price=" + price + "]";
+        return "Book[Title=" + title + ", Author=" + author + ", ISBN=" + ISBN + ", Price=" + price + "]";}
+    //checks if books are equal by first checking it against nothing then checking the isbn
+    public boolean equals(Object other) {
+        if (other == null || getClass() != other.getClass()) {
+            return false;
+        }
+        Book book = (Book) other;
+        return ISBN.equals(book.ISBN); 
     }
+    
 	public String getTitle() { //getters and setters
-		return title;
-	}
+		return title;}
+	
 	public void setTitle(String title) {
 		this.title = title;
 	}
