@@ -29,6 +29,10 @@ public class Book {
         this.price = other.price;
     }
     
+    //makes the values into strings
+    public String toString() {
+        return "Book[Title=" + title + ", Author=" + author + ", ISBN=" + ISBN + ", Price=" + price + "]";
+    }
 	public String getTitle() { //getters and setters
 		return title;
 	}
@@ -53,9 +57,6 @@ public class Book {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-
-    
-
-	}
+}
 
 
