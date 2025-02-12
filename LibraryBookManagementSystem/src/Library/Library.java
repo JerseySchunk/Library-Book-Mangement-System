@@ -20,8 +20,10 @@ public class Library {
 		if(count < books.length) {
 			books[count] = book;
 			count++;
+			System.out.println("Book added");
 			return true;
 		}
+		System.out.println("Too many books, there is a limit of 5 books");
 		return false;
 	}
 	
@@ -52,8 +54,10 @@ public class Library {
 	public Book searchByISBN(String ISBN) {
 		for(int i = 0; i < count; i++) {
 			if(books[i].getISBN().equals(ISBN))
+				System.out.println("Book found" + ISBN);
 				return books[i];
 		}
+		System.out.println("Book was not found for: " + ISBN);
 		return null;
 	}
 		
