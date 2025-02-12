@@ -43,7 +43,7 @@ public class Library {
 				return true;
 			}
 		}
-		System.out.println("Failed to remove book: " + book);
+		System.out.println("Cannot remove book: " + book + "Book may be deleted");
 		return false;
 	}
 	
