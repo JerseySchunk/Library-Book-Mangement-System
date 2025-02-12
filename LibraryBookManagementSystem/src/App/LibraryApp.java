@@ -6,8 +6,7 @@ import Library.Book;
 public class LibraryApp {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
 		//Making a new Library object
 		Library newLibrary = new Library();
 		
@@ -40,6 +39,7 @@ public class LibraryApp {
 		 * Displaying books and removing books
 		 */
 		
+		//running the remove then display then remove again
 		newLibrary.removeBook(book3);
 		
 		newLibrary.displayBooks();
