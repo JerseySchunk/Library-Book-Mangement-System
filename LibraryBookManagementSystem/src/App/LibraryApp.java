@@ -13,8 +13,8 @@ public class LibraryApp {
 		 */
 		Library newLibrary = new Library();
 		
-		Book book1 = new Book("Place Holder 1", "Placeholder 2", "1235325235", 45.99);
-		Book book2 = new Book("Place Holder 3", "Placeholder 4", "123456789", 19.99);
+		Book book1 = new Book("Wheel of Time", "Robert Jordan", "12353235", 00.30);
+		Book book2 = new Book("Spice and Wolf Anniversary Collectors edition", "Isuna Hasekura", "123456789", 175.00);
 		Book book3 = new Book("Place Holder 5", "Placeholder 6", "1234567893", 20.99);
 		/**
 		 * Adding Books to the new Library
