@@ -45,15 +45,21 @@ public class Library {
 		return false;
 	}
 	
-	//Waiting for the book class to be updated with getter methods before I can continue this
-	//public Book SearchByISBN(String ISBN) {
+	//Function to search the book array for a specific ISBN using the getter function.
+	//Returns the book if found and null if not found.
+	public Book searchByISBN(String ISBN) {
+		for(int i = 0; i < count; i++) {
+			if(books[i].getISBN().equals(ISBN))
+				return books[i];
+		}
+		return null;
+	}
 		
-	
+	//Cycles through the books array and prints the information
 	public void displayBooks() {
 		for(int i = 0; i < count; i++) {
 			System.out.println(book[i]);
 		}
 	}
-	
 
 }
