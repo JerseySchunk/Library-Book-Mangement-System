@@ -1,4 +1,9 @@
-
+/**
+ * This is the book class that contains all the attributes of a book.
+ * those attributes are Title Author ISBN and Price.
+ * it comes with constructors parameterized constructors and copy constructors.
+ * there is also a method that sets all values to strings and the last one checks if two books are the same.
+ */
 package Library;
 
 public class Book {
@@ -72,7 +77,6 @@ public class Book {
 
     // Overriding equals() method
     public boolean equals(Object other) {
-        if (this == other) return true;
         if (other == null || getClass() != other.getClass()) return false;
         Book book = (Book) other;
         return this.ISBN.equals(book.ISBN);
