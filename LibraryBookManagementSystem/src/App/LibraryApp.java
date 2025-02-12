@@ -31,11 +31,24 @@ public class LibraryApp {
 		newLibrary.addBook(book6);
 		
 		/**
-		 * Adding Books to the new Library
+		 * Searching by ISBN
 		 */
 		
-		newLibrary.displayBooks();
 		newLibrary.searchByISBN("123456789");
+		
+		Book findBook = newLibrary.searchByISBN("123456789");
+		if (findBook != null) {
+			System.out.println("Book found: " + findBook);
+		}
+		else {
+			System.out.println("Book not found");
+		}
+		
+		newLibrary.displayBooks();
+		
+		/**
+		 * Displaying books and removing books
+		 */
 //		newLibrary.removeBook(book3);
 //		newLibrary.displayBooks();
 		//Testing changes made to displayBook and remove Book methods
