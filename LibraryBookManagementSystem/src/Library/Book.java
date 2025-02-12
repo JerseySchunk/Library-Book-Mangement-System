@@ -1,69 +1,80 @@
+
 package Library;
 
 public class Book {
-	// Private attributes
+    // Private attributes
     private String title;
     private String author;
     private String ISBN;
     double price;
-    
-    // This sets all values to be Unknown or 0.0 upon creation 
+
+    // Default constructor
     public Book() {
         this.title = "Unknown";
         this.author = "Unknown";
         this.ISBN = "Unknown";
         this.price = 0.0;}
-    
-    // Parameterized constructor so that new books will be correctly formated and have all needed information
+
+    // Parameterized constructor
     public Book(String title, String author, String ISBN, double price) {
         this.title = title;
         this.author = author;
         this.ISBN = ISBN;
-        this.price = price;}
-    
-    // Copy constructor sets copy values 
+        this.price = price;
+    }
+
+    // Copy constructor
     public Book(Book other) {
         this.title = other.title;
         this.author = other.author;
         this.ISBN = other.ISBN;
-        this.price = other.price;}
-    
-    //makes the values into strings
-    public String toString() {
-        return "Book[Title=" + title + ", Author=" + author + ", ISBN=" + ISBN + ", Price=" + price + "]";}
-    //checks if books are equal by first checking it against nothing then checking the isbn
-    public boolean equals(Object other) {
-        if (other == null || getClass() != other.getClass()) {
-            return false;
-        }
-        Book book = (Book) other;
-        return ISBN.equals(book.ISBN); 
+        this.price = other.price;
     }
-    
-	public String getTitle() { //getters and setters
-		return title;}
-	
-	public void setTitle(String title) {
-		this.title = title;
-	}
-	public String getAuthor() {
-		return author;
-	}
-	public void setAuthor(String author) {
-		this.author = author;
-	}
-	public String getISBN() {
-		return ISBN;
-	}
-	public void setISBN(String iSBN) {
-		ISBN = iSBN;
-	}
-	public double getPrice() {
-		return price;
-	}
-	public void setPrice(double price) {
-		this.price = price;
-	}
+
+
+    //Getters and setters 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getISBN() {
+        return ISBN;
+    }
+
+    public void setISBN(String iSBN) {
+        ISBN = iSBN;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    // Overriding toString() method
+    public String toString() {
+        return "Book[Title=" + title + ", Author=" + author + ", ISBN=" + ISBN + ", Price=" + price + "]";
+    }
+
+    // Overriding equals() method
+    public boolean equals(Object other) {
+        if (this == other) return true;
+        if (other == null || getClass() != other.getClass()) return false;
+        Book book = (Book) other;
+        return this.ISBN.equals(book.ISBN);
+    }
 }
-
-
