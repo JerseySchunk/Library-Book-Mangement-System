@@ -16,8 +16,6 @@ public class LibraryApp {
 		Book book1 = new Book("Place Holder 1", "Placeholder 2", "1235325235", 45.99);
 		Book book2 = new Book("Place Holder 3", "Placeholder 4", "123456789", 19.99);
 		Book book3 = new Book("Place Holder 5", "Placeholder 6", "1234567893", 20.99);
-		Book book4 = new Book("Place Holder 7", "Placeholder 6", "1234567893", 20.99);
-		Book book5 = new Book("Place Holder 8", "Placeholder 6", "1234567893", 20.99);
 		/**
 		 * Adding Books to the new Library
 		 */
@@ -25,32 +23,32 @@ public class LibraryApp {
 		newLibrary.addBook(book1);
 		newLibrary.addBook(book2);
 		newLibrary.addBook(book3);
-		newLibrary.addBook(book4);
-		newLibrary.addBook(book5);
 		
 		/**
 		 * Searching by ISBN
 		 */
-		
-		newLibrary.searchByISBN("123456789");
-		
+
 		Book findBook = newLibrary.searchByISBN("123456789");
 		if (findBook != null) {
+			System.out.println("Looking for book with ISBN: "  +findBook.getISBN());
 			System.out.println("Book found: " + findBook);
 		}
 		else {
 			System.out.println("Book not found");
 		}
 		
+		System.out.println("Displaying all books in Library");
 		newLibrary.displayBooks();
 		
 		/**
 		 * Displaying books and removing books
 		 */
-		newLibrary.removeBook(book4);
-		System.out.println("Removing Book: " + book4);
+		
+		newLibrary.removeBook(book3);
 		
 		newLibrary.displayBooks();
+
+		newLibrary.removeBook(book3);
 		
 //		newLibrary.removeBook(book3);
 //		newLibrary.displayBooks();
