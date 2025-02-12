@@ -18,7 +18,6 @@ public class LibraryApp {
 		Book book3 = new Book("Place Holder 5", "Placeholder 6", "1234567893", 20.99);
 		Book book4 = new Book("Place Holder 7", "Placeholder 6", "1234567893", 20.99);
 		Book book5 = new Book("Place Holder 8", "Placeholder 6", "1234567893", 20.99);
-		Book book6 = new Book("Place Holder 9", "Placeholder 6", "1234567893", 20.99);
 		/**
 		 * Adding Books to the new Library
 		 */
@@ -28,7 +27,6 @@ public class LibraryApp {
 		newLibrary.addBook(book3);
 		newLibrary.addBook(book4);
 		newLibrary.addBook(book5);
-		newLibrary.addBook(book6);
 		
 		/**
 		 * Searching by ISBN
@@ -49,6 +47,11 @@ public class LibraryApp {
 		/**
 		 * Displaying books and removing books
 		 */
+		newLibrary.removeBook(book4);
+		System.out.println("Removing Book: " + book4);
+		
+		newLibrary.displayBooks();
+		
 //		newLibrary.removeBook(book3);
 //		newLibrary.displayBooks();
 		//Testing changes made to displayBook and remove Book methods
