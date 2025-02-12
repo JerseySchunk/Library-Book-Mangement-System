@@ -49,10 +49,6 @@ public class LibraryApp {
 		newLibrary.displayBooks();
 
 		newLibrary.removeBook(book3);
-		
-//		newLibrary.removeBook(book3);
-//		newLibrary.displayBooks();
-		//Testing changes made to displayBook and remove Book methods
 	}
 
 }

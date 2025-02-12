@@ -67,7 +67,7 @@ public class Book {
 
     // Overriding toString() method
     public String toString() {
-        return "Book[Title = " + title + ", Author= " + author + ", ISBN = " + ISBN + ", Price = " + price + "]";
+        return "Book[Title = " + title + ", Author = " + author + ", ISBN = " + ISBN + ", Price = " + price + "]";
     }
 
     // Overriding equals() method
