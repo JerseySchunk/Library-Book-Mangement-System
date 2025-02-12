@@ -17,6 +17,10 @@ public class LibraryApp {
 		Book book2 = new Book("Place Holder 3", "Placeholder 4", "123456789", 19.99);
 		Book book3 = new Book("Place Holder 5", "Placeholder 6", "1234567893", 20.99);
 		
+		/**
+		 * Adding Books to the new Library
+		 */
+		
 		newLibrary.addBook(book1);
 		newLibrary.addBook(book2);
 		newLibrary.addBook(book3);
@@ -25,6 +29,10 @@ public class LibraryApp {
 		 * Adding Books to the new Library
 		 */
 		
+		newLibrary.displayBooks();
+		newLibrary.removeBook(book3);
+		newLibrary.displayBooks();
+		//Testing changes made to displayBook and remove Book methods
 	}
 
 }

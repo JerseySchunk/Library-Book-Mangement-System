@@ -39,9 +39,11 @@ public class Library {
 				books[i] = books[count - 1];
 				books[count - 1] = null;
 				count--;
+				System.out.println("Succesfully removed the book");
 				return true;
 			}
 		}
+		System.out.println("Failed to remove book");
 		return false;
 	}
 	
