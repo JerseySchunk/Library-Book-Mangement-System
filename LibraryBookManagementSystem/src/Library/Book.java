@@ -77,7 +77,6 @@ public class Book {
 
     // Overriding equals() method
     public boolean equals(Object other) {
-        if (other == null || getClass() != other.getClass()) return false;
         Book book = (Book) other;
         return this.ISBN.equals(book.ISBN);
     }
