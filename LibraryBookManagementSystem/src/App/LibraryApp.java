@@ -34,8 +34,7 @@ public class LibraryApp {
 		else {
 			System.out.println("Book not found" + "\n");
 		}
-		
-		System.out.println("Displaying all books in Library" + "\n");
+		//displaying books
 		newLibrary.displayBooks();
 		System.out.println("\n");
 		

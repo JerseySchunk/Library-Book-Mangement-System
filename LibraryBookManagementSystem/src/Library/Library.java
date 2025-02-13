@@ -64,6 +64,7 @@ public class Library {
 		
 	//Cycles through the books array and prints the information
 	public void displayBooks() {
+		System.out.println("All books in Library: ");
 		for(int i = 0; i < count; i++) {
 			System.out.println(books[i]);
 		}
