@@ -1,11 +1,16 @@
 package Library;
 
-//test
+/**
+ * The Library class manages a collection of books.
+ * These functionalities include adding, removing, searching, and displaying books.
+ * @author JerseySchunk
+ */
+
 //Defining the Library class.
 public class Library {
 	private Book[] books;
 	private int count;
-//Constructor to initalize the books array and count.
+//Constructor to initialize the books array and count.
 	public Library() {
 		this.books = new Book[5];
 		this.count = 0;
@@ -43,7 +48,7 @@ public class Library {
 				return true;
 			}
 		}
-		System.out.println("Cannot remove book: " + book + "Book may be deleted");
+		System.out.println("Cannot remove book: " + book + ". Book may be deleted");
 		return false;
 	}
 	
@@ -59,6 +64,7 @@ public class Library {
 		
 	//Cycles through the books array and prints the information
 	public void displayBooks() {
+		System.out.println("All books in Library: ");
 		for(int i = 0; i < count; i++) {
 			System.out.println(books[i]);
 		}
