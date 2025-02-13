@@ -2,7 +2,7 @@
  * This is the book class that contains all the attributes of a book.
  * those attributes are Title Author ISBN and Price.
  * it comes with constructors parameterized constructors and copy constructors.
- * there is also a method that sets all values to strings and the last one checks if two books are the same.
+ * there is also a method that sets all values to strings and the last one checks if two of books are the same.
  */
 package Library;
 
